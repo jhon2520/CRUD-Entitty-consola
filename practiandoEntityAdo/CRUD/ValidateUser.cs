@@ -15,7 +15,7 @@ namespace practiandoEntityAdo.CRUD
             using (PrimerCrudEntities db = new PrimerCrudEntities())
             {
                 var objectUser = (from d in db.PrimerCrudTable
-                                  where d.nombre == nombre && d.correo == Encriptador.EncriptarContra(correo)).FirstOrDefault();
+                                  where d.nombre == nombre && d.correo == Encriptador.EncriptarContra(correo)select d).FirstOrDefault();
 
                 if (objectUser == null) { Console.WriteLine("No puede pasar"); }
                 else { Console.WriteLine("Puede pasar"); }

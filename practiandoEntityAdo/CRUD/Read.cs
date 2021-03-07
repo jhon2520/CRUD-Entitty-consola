@@ -17,7 +17,7 @@ namespace practiandoEntityAdo.CRUD
 
                 foreach (var user in table)
                 {
-                    Console.WriteLine(user.nombre);
+                    Console.WriteLine($"{user.nombre} {user.correo}");
                 }
             }
         }

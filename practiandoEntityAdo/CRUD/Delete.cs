@@ -13,10 +13,12 @@ namespace practiandoEntityAdo.CRUD
         {
             using (PrimerCrudEntities db = new PrimerCrudEntities())
             {
-                PrimerCrudTable table = db.PrimerCrudTable.Where(user => user.idUsuario == id).First();
+                PrimerCrudTable table = db.PrimerCrudTable.Where(s => s.idUsuario == id).FirstOrDefault();
                 db.PrimerCrudTable.Remove(table);
                 db.SaveChanges();
             }
         }
+
+
     }
 }

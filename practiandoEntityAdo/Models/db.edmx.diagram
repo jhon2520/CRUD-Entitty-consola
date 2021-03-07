@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="b628974f1b9446ff98487f42c1ca2305" Name="Diagram1">
-        <EntityTypeShape EntityType="PrimerCrudModel.PrimerCrudTable" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimerCrudModel.PrimerCrudTable" Width="3.25" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
